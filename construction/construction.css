@@ -1,0 +1,174 @@
+:root {
+    /* colors */
+        /* menu texts */
+        --passivetext: rgb(209, 171, 75);
+        --activetext: rgb(255, 245, 238);
+        /* body texts */
+        --contenttext: rgb(29, 28, 27);
+        --headingtext: rgb(112, 81, 3);
+        /* background */
+        --backwhite: rgb(245, 237, 230);
+        --backblack: rgb(26, 26, 26);
+        --backgold: antiquewhite;
+        /* button */
+        --buttonpassive: rgb(237, 242, 245);
+        --buttonhover: rgb(209, 171, 75);
+        --buttonactive: rgb(240, 190, 64);
+        
+      }
+
+      a, a:hover, a:focus, a:active {
+        text-decoration: none;
+        color: inherit;
+   }
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Microsoft Tai Le';
+    list-style: none;
+    box-sizing: border-box;
+    background: var(--backwhite);
+}
+
+nav {
+    position: fixed;
+    z-index: 100;
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+    background-color:  rgba(0, 0, 0, 0.863);
+    /* margin-top: auto; */
+    top: 0% !important;
+
+    
+}
+
+.logo {
+    color: rgb(247, 240, 231);
+    font-weight: 600;
+    font-size: 16px;
+
+}
+
+nav .nav-links ul {
+    display: flex;
+    flex-direction: row;
+    padding-right: 100% !important;
+    /* right: 100%; */
+
+}
+
+nav .nav-links ul li {
+    padding:  10px;
+    
+    list-style: none;
+    font-size: 1.0em;
+    color: var(--passivetext);
+    /* background-color: aqua;     */
+    margin: auto;
+    
+    
+  
+}
+
+nav .nav-links ul li :hover {   
+    color:var(--activetext);
+    transition: 0.5s;     
+    cursor: pointer;
+    } 
+
+nav .nav-links ul img {
+    transform: scale(0.8);
+    align-self:auto;
+    padding: 10px;
+}
+
+nav .nav-links ul img:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:var(--backblack);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 60px;
+}
+.waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  color:var(--backgold);
+  text-transform: uppercase;
+  animation: waviy 1.5s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
+.back{
+    position: absolute;
+    top: 78%;
+
+    
+    height: 10%;
+    width: 20%;
+    border-radius: 16px;
+
+    border: solid 2px; 
+    background-color: none;
+    border-color: var(--backgold);
+    align-items: center;   
+
+    font-size: 1.5em;
+    color: var(--passivetext);
+    text-align:center;
+    padding: 17px;
+  
+}
+
+.back:hover {
+    background-color:var(--buttonhover);
+    color: var(--activetext);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.back:active{
+    background-color:var(--buttonactive);
+    transition: 0.5s;
+}

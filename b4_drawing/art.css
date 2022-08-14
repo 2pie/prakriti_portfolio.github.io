@@ -207,21 +207,23 @@
       }
 
 
-      .slides {
-        padding-top: 5% !important;
-        padding: 0%;
-        color: rgb(43, 144, 226);
-        z-index: 1;
-    }
+     
+    .slides {
+      padding-top: 0% !important;
+      padding: 5%;
+      color: rgb(43, 144, 226);
+      z-index: 1;
+      
+}
+  
 
-    .slides img {
-        height: 100%;
-        width: 100%;
-        margin: 0%;
-        padding-top: 2%;
-        
-    }
-
+  .slides img {
+      height: auto;
+      width: 100%;
+      margin: auto;
+      margin-bottom: 1.5%;
+      
+  }
 
 
 

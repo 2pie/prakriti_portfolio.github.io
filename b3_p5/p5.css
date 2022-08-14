@@ -143,22 +143,20 @@ cursor: pointer;
 
 
 
-    .slides {
-        padding-top: 10% !important;
-        padding: 10%;
+      .slides {
+        padding-top: 0% !important;
+        padding: 5%;
         color: rgb(43, 144, 226);
         z-index: 1;
-        align-items: center;
-    }
-
-
-
-
-    .slides img {
-        height: 80%;
-        width: 75%;
-        margin: 10%;
         
+  }
+    
+  
+    .slides img {
+        height: auto;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 1.5%;
         
     }
 

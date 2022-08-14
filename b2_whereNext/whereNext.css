@@ -136,17 +136,20 @@
         /* padding-top: 10%; */
       }
 
-    .slides {
+      .slides {
         padding-top: 0% !important;
-        padding: 10%;
+        padding: 5%;
         color: rgb(43, 144, 226);
         z-index: 1;
-    }
-
+        
+  }
+    
+  
     .slides img {
-        height: 100%;
+        height: auto;
         width: 100%;
-        margin: 0%;
+        margin: auto;
+        margin-bottom: 1.5%;
         
     }
 

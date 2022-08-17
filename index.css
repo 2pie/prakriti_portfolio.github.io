@@ -120,7 +120,10 @@
         cursor: pointer;
     }
     
-    
+    .square {
+        background-color:var(--backblack);
+        width: 100%;
+        height: 10%; }
     
     
     /* experiment zone */
@@ -140,12 +143,17 @@
     
     
     
-      .square {
-        background-color:var(--backblack);
-        width: 100%;
-        height: 10%; }
+     
     
     
+
+
+
+
+
+
+
+
     section {
         height: fit-content;
         overflow: hidden;
@@ -158,7 +166,7 @@
         position: absolute !important;
         left: -10% !important;
         top: unset !important;
-        bottom: -100px;
+        bottom: -200px;
     }
     
     .sky img{
@@ -242,7 +250,7 @@
     .cliff img {
         width: 110%;
         height: 100%;
-        z-index: 3;
+        z-index: 3.5;
         filter: brightness(0.9);
     }
     
@@ -263,8 +271,77 @@
     
     
     
+  /* for tablet */
+
+
+  @media screen and (max-width: 992px) {
     
     
+    .square {
+        background-color:var(--backblack);
+        width: 100%;
+        height: 8%; }
+
+
+    .backC {
+        position: absolute !important;
+        left: 5% !important;
+        /* top: 25vh !important; */
+        top: unset !important;
+        bottom: 5vh;
+    }
+
+    .girl {
+        position: absolute;
+        left: 5% !important;
+        bottom: 60px !important;
+        top:unset !important;
+    }
+
+    .frontC {
+        position: absolute;
+        left: 10% !important;
+        bottom: 25px !important;
+        top:unset !important;
+    }
+    
+    .dragon {
+        position: absolute;
+        left: 54% !important;
+        bottom: 8px !important;
+        top:unset !important;
+    }
+    
+    .cliff {
+        position: absolute;
+        left: -5% !important;
+        bottom: -0px !important;
+        top: unset !important;
+        right: unset !important; 
+    }
+    
+    .textpic {
+        position: absolute;
+        left: 12% !important;
+        bottom: 30% !important;
+        top: unset !important;
+        right: unset !important; 
+    }
+    
+    .textpic img {
+        width: 50%;
+        height: 40%;
+        z-index: 3;
+        filter: brightness(0.9);
+        
+    }
+    
+    } 
+
+
+
+    
+    /* for mobile */
     
     @media screen and (max-width: 768px) {
     
@@ -333,8 +410,7 @@
         } 
     
     
-    
-    
+  
     
     
     
@@ -377,6 +453,16 @@
        
     }
     
+
+
+    @media screen and (max-width: 992px) {
+        .column {
+          width: 45%;
+          margin-top: 3%;
+        margin-left: 3%;
+        }
+      }
+
     @media screen and (max-width: 600px) {
         .column {
           width: 100%;
@@ -384,6 +470,8 @@
         margin-left: 2%;
         }
       }
+
+     
     
     
     
@@ -430,7 +518,7 @@
     
     
     
-    
+    /* not in use zone */
     
     
     
@@ -560,6 +648,46 @@
     /* order of things in mob- img, heading, space, shadow */
     
     
+    @media screen and (max-width: 992px) {
+        .feather {
+          display: none;
+        }
+    
+        .container4 {
+            
+            display: flex;
+            width: 100%;
+          }
+    
+        .page4 h1 {
+            font-size: 3em;
+            padding: 3%;
+            margin-top: 1%;
+        }
+    
+        .item4 {
+            background-color:rgba(26, 26, 26, 0);
+            flex-basis: 40%;
+            /* height:fit-content; */
+            margin: 4%; 
+            /* border-radius: 2%;  */
+          } 
+        
+          .item4 ul {
+            padding: 8%;
+            line-height: 280%;
+            font-size: 200%;
+            color: var(--activetext);
+        
+          } 
+    
+      }
+
+
+
+
+
+
     @media screen and (max-width: 600px) {
         .feather {
           display: none;
@@ -592,9 +720,6 @@
             font-size: 100%;
             color: var(--activetext);
         
-          }
-    
-    
-    
+          } 
     
       }

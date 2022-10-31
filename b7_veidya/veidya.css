@@ -136,9 +136,10 @@
   
     .slides img {
         height: auto;
-        width: 100%;
+        width: 90%;
         margin: auto;
         margin-bottom: 1.5%;
+        margin-left: 5.5%;
         
     }
 

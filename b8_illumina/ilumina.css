@@ -7,7 +7,7 @@
         --contenttext: rgb(29, 28, 27);
         --headingtext: rgb(112, 81, 3);
         /* background */
-        --backwhite: rgb(245, 237, 230);
+        --backwhite: rgb(42, 44, 45);
         --backblack: rgb(26, 26, 26);
         --backgold: antiquewhite;
         /* button */
@@ -136,8 +136,9 @@
 
     .slides img {
         height: auto;
-        width: 100%;
+        width: 90%;
         margin: auto;
+        margin-left: 5.5%;
         
     }
 

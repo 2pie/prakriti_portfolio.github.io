@@ -1,0 +1,135 @@
+<head>
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge"/>
+
+    <title>
+        Prakriti Mukherjee - Assisstive Technology 
+    </title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="b9_cashreader/cashReader.css"/>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/> -->
+    </head>
+
+    <body>
+        <nav>
+            <div class="logo">PRAKRITI</div>
+            <div class="nav-links">
+                <ul>
+                    
+                    <li><a href="index.html#work">WORK</a></li>
+                    <li><a href="resume.html" >RESUME</a></li>
+                   <img src="img/linkedIcon.png" alt="social" onclick="location.href='https://www.linkedin.com/in/prakriti-mukherjee-b47a65189/'"> 
+
+                </ul>
+            </div>
+        </nav>
+
+
+<!-- bannrer -->
+
+<!-- part 2 -->
+
+
+
+
+<div id="seg1" class="square"></div>
+
+
+
+<!-- The indexing menu part 1 -->
+
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <h2>INDEX</h2>
+    <a href="#seg1">Cover</a>  <!-- done to square -->
+    <a href="#seg2">Project Outline</a>
+    <a href="#seg3">Working</a>
+    <a href="#seg4">Machine Learning</a>
+    <a href="#seg5">Features</a>
+    <a href="#seg6">Major hurdle </a>
+    <a href="#seg7">Solution</a>
+    <a href="#seg8">Going Foreward</a>
+    
+
+
+  </div>
+
+
+
+<div id="main">
+    <button id="mainbtn" class="openbtn" onclick="openNav()">☰  
+    </button>  
+
+
+
+<!-- end of indexing -->
+
+
+<div class="slides" >
+ 
+<img id="seg1" src="b9_cashreader/img/slide1.jpg" alt="banner">
+<img id="seg2" src="b9_cashreader/img/slide2.jpg">
+<img id="seg3" src="b9_cashreader/img/slide3.jpg">
+<img id="seg4" src="b9_cashreader/img/slide4.jpg">
+<img  src="b9_cashreader/img/slide5.jpg">
+<img id="seg5" src="b9_cashreader/img/slide6.jpg">
+<img id="seg6" src="b9_cashreader/img/slide7.jpg">
+<img id="seg7" src="b9_cashreader/img/slide8.jpg">
+<video controls>
+<source src="b9_cashreader/vid/cashReader.mp4" type="video/mp4"/>
+<source src="b9_cashreader/vid/cashReader.ogg" type="video/ogg" />
+</video> 
+</div>
+
+<div class="back" onclick="location.href='https://teachablemachine.withgoogle.com/models/qt5NTdZnA/'" target="_blank">
+    <div class="backtext">
+        Try it out yourself
+    </div></div>
+
+<div class="slides" >  
+<img id="seg8" src="b9_cashreader/img/slide9.jpg">
+
+
+
+
+
+<!-- <img id="seg7" src="b1_golden/images/Slide21.SVG">
+<img id="seg8" src="b1_golden/images/Slide22.SVG">
+<img src="b1_golden/images/Slide24.SVG">
+<img src="b1_golden/images/Slide23.SVG"> -->
+ 
+
+</div>
+
+
+
+    </body>
+
+
+
+<script>
+
+    
+// <!-- for side index -->
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "200px";
+    //   document.getElementById("main").style.marginLeft = "20px";
+    document.getElementById("mainbtn").style.visibility = "hidden";
+    
+
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.getElementById("mainbtn").style.visibility = "visible";
+      
+    }
+    </script>
+
+
+
+    </html>

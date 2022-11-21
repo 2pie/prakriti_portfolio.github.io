@@ -1,0 +1,122 @@
+<head>
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge"/>
+
+    <title>
+        Prakriti Mukherjee - Icarus 
+    </title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="b5_icarus/icarus.css"/>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/> -->
+    </head>
+
+    <body>
+        <nav>
+            <div class="logo">PRAKRITI</div>
+            <div class="nav-links">
+                <ul>
+                    
+                    <li><a href="index.html#work">WORK</a></li>
+                    <li><a href="resume.html" >RESUME</a></li>
+                   <img src="img/linkedIcon.png" alt="social" onclick="location.href='https://www.linkedin.com/in/prakriti-mukherjee-b47a65189/'"> 
+
+                </ul>
+            </div>
+        </nav>
+
+
+<!-- bannrer -->
+
+<!-- part 2 -->
+
+
+
+
+<div id="seg1" class="square"></div>
+
+
+
+<!-- The indexing menu part 1 -->
+
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <h2>INDEX</h2>
+    <a href="#seg1">Cover</a>  <!-- done to square -->
+    <a href="#seg2">Project Outline</a>
+    <a href="#seg3">Character</a>
+    <a href="#seg4">Backgrond</a>
+    <a href="#seg5">Texture</a>
+    <a href="#seg6">Compilation</a>
+    <!-- <a href="#seg7">Solution</a> -->
+    <a href="#seg8">Going Foreward</a>
+    
+
+
+  </div>
+
+
+
+<div id="main">
+    <button id="mainbtn" class="openbtn" onclick="openNav()">☰  
+    </button>  
+
+
+
+<!-- end of indexing -->
+
+
+<div class="slides" >
+ 
+<img id="seg1" src="b5_icarus/img/Slide1.JPG" alt="banner">
+<img id="seg2" src="b5_icarus/img/Slide2.JPG">
+<img id="seg3" src="b5_icarus/img/Slide3.JPG">
+<img id="seg4" src="b5_icarus/img/Slide4.JPG">
+<img id="seg5" src="b5_icarus/img/Slide5.JPG">
+<img id="seg6" src="b5_icarus/img/Slide6.JPG">
+<img id="seg7" src="b5_icarus/img/Slide7.JPG">
+<img id="seg8" src="b5_icarus/img/Slide8.JPG"> 
+</div>
+
+<!-- <img id="seg7" src="b1_golden/images/Slide21.SVG">
+<img id="seg8" src="b1_golden/images/Slide22.SVG">
+<img src="b1_golden/images/Slide24.SVG">
+<img src="b1_golden/images/Slide23.SVG"> -->
+ 
+
+</div>
+
+<div class="back" onclick="location.href='https://www.behance.net/gallery/157415845/A-VR-experience-using-Maya-and-Unity'" target="_blank">
+    <div class="backtext">
+        View in Behance
+    </div></div>
+
+    </body>
+
+
+
+<script>
+
+    
+// <!-- for side index -->
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "200px";
+    //   document.getElementById("main").style.marginLeft = "20px";
+    document.getElementById("mainbtn").style.visibility = "hidden";
+    
+
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.getElementById("mainbtn").style.visibility = "visible";
+      
+    }
+    </script>
+
+
+
+    </html>

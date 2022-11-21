@@ -2,15 +2,14 @@
     /* colors */
         /* menu texts */
         --passivetext: rgb(209, 171, 75);
-        --sidetext: rgb(209, 149, 75);
         --activetext: rgb(255, 245, 238);
         /* body texts */
-        --contenttext: rgb(18, 0, 41);
-        --headingtext: rgb(53, 51, 48);
+        --contenttext: rgb(29, 28, 27);
+        --headingtext: rgb(112, 81, 3);
         /* background */
-        --backwhite: rgb(23, 27, 35);
-        --backblack: rgba(26, 26, 26);
-        --backgold: rgb(227, 214, 196);
+        --backwhite: rgb(245, 237, 230);
+        --backblack: rgb(26, 26, 26);
+        --backgold: antiquewhite;
         /* button */
         --buttonpassive: rgb(255, 254, 243);
         --buttonhover: rgb(209, 171, 75);
@@ -44,8 +43,6 @@
         background: var(--passivetext); 
         }
 
-
-
         a, a:hover, a:focus, a:active {
           text-decoration: none;
           color: inherit;
@@ -59,7 +56,7 @@
       font-family: 'Microsoft Tai Le';
       list-style: none;
       box-sizing: border-box;
-      background: var(--backwhite);
+      background: var(--backblack);
   }
   
   nav {
@@ -119,9 +116,6 @@
       cursor: pointer;
   }
     
-
-
-
     
     .square {
         background-color:var(--backblack);
@@ -130,8 +124,6 @@
         /* margin-top: 10%; */
         /* padding-top: 10%; */
       }
-
-
 
       .slides {
         padding-top: 0% !important;
@@ -144,44 +136,26 @@
   
     .slides img {
         height: auto;
-        width: 100%;
+        width: 90%;
         margin: auto;
-        margin-bottom: 1.5%;
+        /* margin-bottom: 1.5%; */
+        margin-left: 5.5%;
         
     }
 
-    
+    .slides video {
+      width: 90%   ;    
+      height: auto  ;  
+      margin: auto;
+      margin-left: 5.5%;
 
-
-
-
-.textBox {
-    height: auto;
-    background-color: var(--backgold);
-    margin: 5%;
-    border: solid 5px;
-    border-color: var(--passivetext);
-    border-style:dotted;
-    padding: 2%;
-    font-size: 16pt;
-    font-family: 'Book Antiqua';
-    border-radius: 5px;
-}
-
-.textBox h1{
-    font-size: 2.5em;
-    color: var(--headingtext);
-}
-
-
-
-
+    }
 
 
 
 
     .sidebar {
-        height: 50%;
+        height: 70%;
         width: 0%;
         padding: auto;
         position: fixed;
@@ -194,17 +168,19 @@
         padding-top: 60px;
         border-radius: 0 2% 2% 0;
       }
+      
 
       .sidebar h2{
-          padding-left: 10%;
-          color:var(--activetext);
-      }
-      
+        padding-left: 10%;
+        color:var(--activetext);
+    }
+
+    
       .sidebar a {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
         font-size: 100%;
-        color:var(--sidetext);
+        color:var(--passivetext);
         display: block;
         transition: 0.3s;
       }
@@ -258,9 +234,6 @@
         .sidebar a {font-size: 18px;}
       }
 
-
-
-
       /* button */
 
 
@@ -271,6 +244,7 @@
         
         /* height: 10%; */
         margin: auto;
+        margin-bottom: 30px;
         
         width:fit-content;
         border-radius: 16px;

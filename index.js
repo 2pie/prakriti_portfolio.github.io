@@ -3,6 +3,8 @@ function redirect() {
     window.location.href = 'https://2pie.github.io/Prakriti_Masters_Design_portfolio/index.html';
 }
 
+redirect();
+
 //PARALLAX
 
 let scene = document.getElementById("scene");
